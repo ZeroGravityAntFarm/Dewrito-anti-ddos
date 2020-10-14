@@ -46,3 +46,15 @@ sysctl -p
 ```bash
 apt-get install fail2ban
 ```
+
+##### Disable ssh root login
+
+```bash
+vim /etc/ssh/sshd_config
+
+Add:
+PermitRootLogin no
+
+Restart sshd:
+sudo service ssh restart
+```
