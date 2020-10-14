@@ -1,5 +1,5 @@
 # Eldewrito Anti DDOS
-Some hardening tips for your eldewrito server (Linux only).
+Some hardening tips for your eldewrito server(or any game server really).
 
 
 ### Limit the number of connections from a single address on the game ports
