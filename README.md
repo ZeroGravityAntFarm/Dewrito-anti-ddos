@@ -71,7 +71,7 @@ sudo service ssh restart
 
 
 ### Setup basic firewall with UFW
-```bash
+```
 sudo apt install ufw
 
 sudo ufw allow 22
