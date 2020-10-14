@@ -10,8 +10,7 @@ done
 ```
 
 
-##### Mass block know malicious ip addresses and ranges using a firehole netset (works with any ip list)
-##### Firehol level1 can be found here: https://github.com/firehol/blocklist-ipsets/blob/master/firehol_level1.netset
+##### Mass block know malicious ip addresses and ranges using a firehole netset (works with any ip list). Firehol level1 can be found here: https://github.com/firehol/blocklist-ipsets/blob/master/firehol_level1.netset
 ```bash
 #!/bin/bash
 filename='firehol_level1.netset'
