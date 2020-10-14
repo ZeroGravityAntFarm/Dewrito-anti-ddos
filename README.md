@@ -1,4 +1,4 @@
-# dewrito-anti-ddos
+# Eldewrito Anti DDOS
 Some hardening tips for your eldewrito server (Linux only).
 
 
