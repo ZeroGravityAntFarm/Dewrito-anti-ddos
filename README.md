@@ -70,3 +70,16 @@ PermitRootLogin no
 Restart sshd:
 sudo service ssh restart
 ```
+
+
+### Setup basic firewall with UFW
+```bash
+sudo apt install ufw
+
+sudo ufw allow 22
+
+sudo ufw allow 11774:11777/tcp
+sudo ufw allow 11774:11777/udp
+
+sudo ufw enable
+```
