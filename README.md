@@ -2,7 +2,7 @@
 Some hardening tips for your eldewrito server (Linux only).
 
 
-##### Limit the number of connections from a single address on the game ports
+### Limit the number of connections from a single address on the game ports
 ```bash
 for i in {11774...11777}; do 
     iptables -A INPUT -p tcp --syn --dport $i -m connlimit --connlimit-above 3 -j DROP;
@@ -12,7 +12,7 @@ done
 
 
 
-##### Mass block know malicious ip addresses and ranges using a firehole netset (works with any ip list). Firehol level1 can be found here: https://github.com/firehol/blocklist-ipsets/blob/master/firehol_level1.netset
+### Mass block know malicious ip addresses and ranges using a firehole netset (works with any ip list). Firehol level1 can be found here: https://github.com/firehol/blocklist-ipsets/blob/master/firehol_level1.netset
 ```bash
 #!/bin/bash
 filename='firehol_level1.netset'
@@ -25,7 +25,7 @@ done < $filename
 
 
 
-##### Remove the ip block list
+### Remove the ip block list
 ```bash
 #!/bin/bash
 filename='firehol_level1.netset'
@@ -38,7 +38,7 @@ done < $filename
 
 
 
-##### Enable Syn Cookies
+### Enable Syn Cookies
 ```bash
 vim /etc/sysctl.conf
 
@@ -52,7 +52,7 @@ sysctl -p
 
 
 
-##### Protect ssh with fail2ban
+### Protect ssh with fail2ban
 ```bash
 apt-get install fail2ban
 ```
@@ -60,8 +60,7 @@ apt-get install fail2ban
 
 
 
-##### Disable ssh root login
-
+### Disable ssh root login
 ```bash
 vim /etc/ssh/sshd_config
 
