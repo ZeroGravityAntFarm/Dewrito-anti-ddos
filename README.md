@@ -10,6 +10,8 @@ done
 ```
 
 
+
+
 ##### Mass block know malicious ip addresses and ranges using a firehole netset (works with any ip list). Firehol level1 can be found here: https://github.com/firehol/blocklist-ipsets/blob/master/firehol_level1.netset
 ```bash
 #!/bin/bash
@@ -19,6 +21,8 @@ while read p; do
     ip route add blackhole $p
 done < $filename
 ```
+
+
 
 
 ##### Remove the ip block list
@@ -31,6 +35,9 @@ while read p; do
 done < $filename
 ```
 
+
+
+
 ##### Enable Syn Cookies
 ```bash
 vim /etc/sysctl.conf
@@ -42,10 +49,16 @@ Reload with:
 sysctl -p
 ```
 
+
+
+
 ##### Protect ssh with fail2ban
 ```bash
 apt-get install fail2ban
 ```
+
+
+
 
 ##### Disable ssh root login
 
