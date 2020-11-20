@@ -76,8 +76,8 @@ sudo apt install ufw
 
 sudo ufw allow 22
 
-sudo ufw allow 11774:11777/tcp
-sudo ufw allow 11774:11777/udp
+sudo ufw allow 11775:11777/tcp
+sudo ufw allow 11774:11774/udp
 
 sudo ufw enable
 ```
